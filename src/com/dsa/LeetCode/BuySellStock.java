@@ -13,11 +13,12 @@ public class BuySellStock
             {
                 min = prices[i];
             }
-            //profit = Math.max(profit, prices[i] - min);
-            if ((prices[i] - min) > profit)
+
+            profit = Math.max(profit, prices[i] - min);
+            /*if ((prices[i] - min) > profit)
             {
                 profit = prices[i] - min;
-            }
+            }*/
 
             System.out.println(min + ", " + prices[i] + ", " + profit);
         }

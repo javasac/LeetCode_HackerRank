@@ -1,5 +1,7 @@
 package com.dsa.LeetCode;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ContainsDuplicate
 {
@@ -45,14 +47,32 @@ public class ContainsDuplicate
         return false;
     }
 
+    // using the Hashset
+    boolean findDuplSet(int arr[])
+    {
+        Set<Integer> s = new HashSet<>();
 
+        for (int i=0; i<arr.length; i++)
+        {
+            if (s.contains(arr[i]))
+            {
+                return true;
+            }
+            else
+            {
+                s.add(arr[i]);
+            }
+        }
+        return false;
+    }
 
     public static void main(String[] args)
     {
-        int arr[] = {40, 7, 13, 71, 456, 4};
+        int arr[] = {40, 71, 13, 71, 456, 4};
         ContainsDuplicate cd = new ContainsDuplicate();
 
         //System.out.println(cd.containsDuplVal(arr));
-        System.out.println(cd.findDuplicate(arr));
+        //System.out.println(cd.findDuplicate(arr));
+        System.out.println(cd.findDuplSet(arr));
     }
 }
