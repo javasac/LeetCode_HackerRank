@@ -1,5 +1,4 @@
 package com.dsa.LeetCode;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class AvgScore

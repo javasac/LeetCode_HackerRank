@@ -31,7 +31,7 @@ public class BinaryLinearSearch
             steps++;
             mid = (left + right)/2;
 
-            if (num[mid]==tar)
+            if (num[mid] == tar)
             {
                 System.out.println("Steps in Binary Search : " + steps);
                 return mid;
@@ -55,11 +55,11 @@ public class BinaryLinearSearch
         int num[] = {2, 5, 7, 10, 12, 15, 20, 24, 30, 37, 42, 50, 55, 62, 68, 70};
         int tar = 62;
         int res1 = BinarySearch(num, tar);
-        int res2 = LinearSearch(num, tar);
+        //int res2 = LinearSearch(num, tar);
 
         if (res1!=-1)
         {
-            System.out.println("Number " + tar + " found at index " + res1 + " and " + res2);
+            System.out.println("Number " + tar + " found at index " + res1 + " and " + res1);
         }
         else
         {

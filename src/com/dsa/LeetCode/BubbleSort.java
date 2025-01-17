@@ -1,5 +1,6 @@
 package com.dsa.LeetCode;
 
+// Time Complexity = O(2^n): Exponential Time
 public class BubbleSort
 {
     void sortBubble()
@@ -12,12 +13,12 @@ public class BubbleSort
             for (int i = 0; i < nums.length - 1; i++)
             {
                 System.out.println("Comparing " + nums[i] + " " + nums[i + 1]);
+
                 if (nums[i] > nums[i + 1])
                 {
                     rep = nums[i + 1];
                     nums[i + 1] = nums[i];
                     nums[i] = rep;
-
                 }
             }
             this.printNums(nums);

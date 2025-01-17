@@ -35,7 +35,6 @@ public class HighFive
 
         System.out.println(sco);
         System.out.println(avg);
-
         System.out.println("=======Printing the Final Average score of each======");
 
         HashMap hmp = new HashMap();
