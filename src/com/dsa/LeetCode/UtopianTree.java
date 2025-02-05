@@ -1,6 +1,6 @@
-package com.dsa.LeetCode;/*
-0 - 1, 1 - 2, 2 - 3, 3 - 6, 4 - 7, 5 - 14, 6 - 15, 7 - 30, 8 - 31, 9 - 62
-*/
+package com.dsa.LeetCode;
+//0 - 1, 1 - 2, 2 - 3, 3 - 6, 4 - 7, 5 - 14, 6 - 15, 7 - 30, 8 - 31, 9 - 62
+
 public class UtopianTree
 {
     public static void main(String[] args)
@@ -19,6 +19,7 @@ public class UtopianTree
             {
                 height = height * 2;
             }
+
             System.out.println(height);
             i++;
         }

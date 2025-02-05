@@ -36,12 +36,9 @@ public class AvgScore
                 hm.put(String.valueOf(row), 1);
             }
         }
-
-        // print the Hashmap
         System.out.println(hm);
     }
 
-    // main method
     public static void main(String[] args)
     {
         AvgScore avg = new AvgScore();
@@ -49,3 +46,4 @@ public class AvgScore
         avg.findAvg();
     }
 }
+

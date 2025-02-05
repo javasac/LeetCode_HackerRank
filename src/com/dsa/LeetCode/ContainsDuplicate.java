@@ -6,16 +6,18 @@ import java.util.Set;
 public class ContainsDuplicate
 {
     // brute force
-    boolean containsDuplVal(int arr[])
+    boolean bruteForce(int arr[])
     {
         int val = 0;
 
         for (int i=0; i<arr.length; i++)
         {
             val = arr[i];
+
             for (int j=i+1; j<arr.length; j++)
             {
                 System.out.println(val + " vs " + arr[j]);
+
                 if (val==arr[j])
                 {
                     return true;
@@ -26,7 +28,7 @@ public class ContainsDuplicate
     }
 
     // sort the Array, makes it efficient
-    boolean findDuplicate(int arr[])
+    boolean sortArray(int arr[])
     {
         Arrays.sort(arr);
         Arrays.stream(arr).forEach(System.out::println);
@@ -34,6 +36,7 @@ public class ContainsDuplicate
         for (int i=0; i<arr.length-1; i++)
         {
             System.out.println(arr[i] + " vs " + arr[i+1]);
+
             if (arr[i]==arr[i+1])
             {
                 return true;
@@ -42,8 +45,7 @@ public class ContainsDuplicate
         return false;
     }
 
-    // using the Hashset
-    boolean findDuplSet(int arr[])
+    Set<Integer> findDuplSet(int arr[])
     {
         Set<Integer> s = new HashSet<>();
 
@@ -51,23 +53,26 @@ public class ContainsDuplicate
         {
             if (s.contains(arr[i]))
             {
-                return true;
+                System.out.println(arr[i] + " is Duplicate.");
+                return s;
             }
             else
             {
                 s.add(arr[i]);
             }
         }
-        return false;
+        return s;
     }
 
     public static void main(String[] args)
     {
-        int arr[] = {40, 71, 13, 71, 456, 4};
+        int arr[] = {40, 71, 13, 100, 456, 40, 10, 8905};
         ContainsDuplicate cd = new ContainsDuplicate();
 
-        //System.out.println(cd.containsDuplVal(arr));
-        //System.out.println(cd.findDuplicate(arr));
-        System.out.println(cd.findDuplSet(arr));
+        //System.out.println(cd.bruteForce(arr));
+        //System.out.println(cd.sortArray(arr));
+        Set s = cd.findDuplSet(arr);
+
+        s.forEach(System.out::println);
     }
 }

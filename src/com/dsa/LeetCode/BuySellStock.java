@@ -22,7 +22,7 @@ public class BuySellStock
 
             System.out.println(min + ", " + prices[i] + ", " + profit);
         }
-        System.out.println("Max profit is " + profit);
+        System.out.println("Max profit = " + profit);
     }
 
     public static void main(String[] args)

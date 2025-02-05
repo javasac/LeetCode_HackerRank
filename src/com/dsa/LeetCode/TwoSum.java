@@ -1,6 +1,4 @@
 package com.dsa.LeetCode;
-import com.sun.jdi.IntegerType;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +23,7 @@ public class TwoSum
         Arrays.stream(arr).forEach(System.out::println);
     }
 
-    // using 2 loops
+    // using 2 loops - brute force
     void TwoSum_2(int[] twosum, int target)
     {
         int arr[] = {0, 0};
@@ -37,7 +35,6 @@ public class TwoSum
             {
                 break;
             }
-
             for (int j = i + 1; j < twosum.length; j++)
             {
                 if (target == twosum[i] + twosum[j])
@@ -68,7 +65,6 @@ public class TwoSum
                 index++;
             }
         }
-
         for (Map.Entry<Integer, Integer> entry : map.entrySet())
         {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
@@ -80,7 +76,6 @@ public class TwoSum
     {
         Map<Integer, Integer> map = new HashMap<>();
         int diff =0;
-
         for (int i=0; i < twosum.length; i++)
         {
             diff = target - twosum[i];

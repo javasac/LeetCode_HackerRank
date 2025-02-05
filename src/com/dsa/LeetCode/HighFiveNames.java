@@ -1,7 +1,7 @@
 package com.dsa.LeetCode;
 import java.util.*;
 
-public class HighFive
+public class HighFiveNames
 {
     void findAvg(List ls)
     {
@@ -54,7 +54,7 @@ public class HighFive
 
     public static void main(String[] args)
     {
-        HighFive hf = new HighFive();
+        HighFiveNames hf = new HighFiveNames();
         List l = hf.Scores();
         hf.findAvg(l);
     }

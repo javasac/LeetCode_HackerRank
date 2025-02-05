@@ -51,11 +51,9 @@ public class BinaryLinearSearch
 
     public static void main(String[] args)
     {
-        // 16 elements
         int num[] = {2, 5, 7, 10, 12, 15, 20, 24, 30, 37, 42, 50, 55, 62, 68, 70};
         int tar = 62;
         int res1 = BinarySearch(num, tar);
-        //int res2 = LinearSearch(num, tar);
 
         if (res1!=-1)
         {

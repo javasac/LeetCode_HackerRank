@@ -7,7 +7,6 @@ public class CountChars
     {
         String str = "Java is good programming language";
         int ctr = 1;
-
         java.util.Map<Character, Integer> map = new HashMap<>();
         StringBuilder sb = new StringBuilder(str);
 
@@ -24,7 +23,6 @@ public class CountChars
             }
         }
 
-        // Java 1.8 features
         map.forEach((key, value) -> System.out.println("Key : " + key + " Value : " + value));
     }
 }
