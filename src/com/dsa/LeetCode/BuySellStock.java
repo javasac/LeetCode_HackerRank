@@ -28,7 +28,7 @@ public class BuySellStock
     public static void main(String[] args)
     {
         BuySellStock bs = new BuySellStock();
-        int arr[] = {7, 10, 5, 30, 61, 4};
+        int arr[] = {7, 10, 5, 30, 61, 4, 598};
         bs.maxProfit(arr);
     }
 }

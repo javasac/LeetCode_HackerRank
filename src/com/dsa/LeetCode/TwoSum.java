@@ -76,6 +76,7 @@ public class TwoSum
     {
         Map<Integer, Integer> map = new HashMap<>();
         int diff =0;
+
         for (int i=0; i < twosum.length; i++)
         {
             diff = target - twosum[i];
@@ -98,7 +99,7 @@ public class TwoSum
         //ts.TwoSum_2(arr, 29);
         //ts.TwoSum_3(arr, 29);
 
-        int index[] = ts.TwoSum_4(arr, 29);
+        int index[] = ts.TwoSum_4(arr, 259);
         Arrays.stream(index).forEach(System.out::println);
     }
 }
