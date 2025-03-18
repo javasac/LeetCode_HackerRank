@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class CoinChange
 {
-    public int coinChange(int[] coins, int amount)
+    int coinChange(int[] coins, int amount)
     {
         int[] amt = new int[amount + 1];
         Arrays.fill(amt, amount + 1);
@@ -33,9 +33,7 @@ public class CoinChange
     public static void main(String[] args)
     {
         CoinChange cc = new CoinChange();
-
         int[] coins = {1, 3, 5, 6};
-
-        System.out.println("Minimum coins are " + cc.coinChange(coins, 2));
+        System.out.println("Minimum coins are " + cc.coinChange(coins, 18));
     }
 }
