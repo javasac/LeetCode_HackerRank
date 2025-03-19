@@ -74,8 +74,9 @@ public class TwoSum
     // use Hashmap and 1 for loop - most optimum
     int[] TwoSum_4(int[] twosum, int target)
     {
+        //Arrays.sort(twosum);
         Map<Integer, Integer> map = new HashMap<>();
-        int diff =0;
+        int diff = 0;
 
         for (int i=0; i < twosum.length; i++)
         {
@@ -99,7 +100,7 @@ public class TwoSum
         //ts.TwoSum_2(arr, 29);
         //ts.TwoSum_3(arr, 29);
 
-        int index[] = ts.TwoSum_4(arr, 259);
+        int index[] = ts.TwoSum_4(arr, 60);
         Arrays.stream(index).forEach(System.out::println);
     }
 }
