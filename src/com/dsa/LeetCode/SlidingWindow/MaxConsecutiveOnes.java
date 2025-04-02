@@ -1,38 +1,42 @@
 package com.dsa.LeetCode.SlidingWindow;
-// LeetCode 1004
+// LeetCode 1004 - Maximum Consecutive Ones
 
-public class MaxConsecutiveOnes
+class MaxConsecutiveOnes
 {
     public int longestOnes(int[] nums, int k)
     {
-        int i = 0, j = 0;
+        int zeros_flipped = 0, max_ones = 0, start = 0;
 
-        while (j < nums.length)
+        for (int end=0; end<nums.length; end++)
         {
-            if (nums[j++] == 0)
+            if (nums[end] == 0)
             {
-                k--;
+                zeros_flipped++;
             }
 
-            if (k < 0)
+            while (zeros_flipped > k)
             {
-                if (nums[i++] == 0)
+                if (nums[start] == 0)
                 {
-                    k++;
+                    zeros_flipped--;
                 }
+                start++;
             }
-        }
-        // end of while
 
-        return j - i;
+            max_ones = Math.max(max_ones, (end - start + 1));
+            System.out.println("Zeros Flip = " + zeros_flipped + " Current Ones = " +
+                    (end - start + 1) + " Max Ones = " + max_ones);
+        }
+
+        return max_ones;
     }
 
     public static void main(String[] args)
     {
         MaxConsecutiveOnes mo = new MaxConsecutiveOnes();
 
-        int[] nums = {1,1,1,0,0,0,1,1,1,1,0};
-        int k = 2;
+        int[] nums = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
+        int k = 3;
 
         System.out.println("Max Consecutive Ones = " + mo.longestOnes(nums, k));
     }
