@@ -8,6 +8,7 @@ public class LastStoneWeight
     int StoneWeight(int[] arr)
     {
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+
         for (int i : arr)
         {
             pq.add(i);
@@ -44,3 +45,4 @@ public class LastStoneWeight
         System.out.println("Return value is " + ls.StoneWeight(arr));
     }
 }
+  
