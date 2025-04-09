@@ -10,9 +10,9 @@ public class K_Pairs_Diff_532
         int ctr = 0, sum = 0;
         Map<Integer, Integer> map = new HashMap();
 
-        for (int i=0; i<nums.length; i++)
+        for (int n : nums)
         {
-            map.putIfAbsent(nums[i], 1);
+            map.putIfAbsent(n, 1);
         }
 
         for (Integer v : map.keySet())
@@ -32,7 +32,7 @@ public class K_Pairs_Diff_532
     public static void main(String[] args)
     {
         K_Pairs_Diff_532 kp = new K_Pairs_Diff_532();
-        int[] nums = {3, 1, 4, 1, 5};
+        int[] nums = {3, 1, 4, 1, 5, 2, 7};
         int k = 2;
 
         System.out.println("K Diff Pairs are " + kp.findPairs(nums, k));
