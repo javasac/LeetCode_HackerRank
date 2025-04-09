@@ -2,7 +2,7 @@ package com.dsa.LeetCode;
 
 public class PalindromeString
 {
-    String str[] = {"Cricket", "Mam", "Madam", "Ball", "Yeley"};
+    String str[] = {"Cricket", "Mam", "Madam", "Lal", "Yeley"};
 
     // check each string for Palindrome
     String findPalindrome()

@@ -4,8 +4,8 @@ import java.util.Arrays;
 // Find if 2 Strings are equal.
 class Anagrams
 {
-    String a = "ehllo";
-    String b = "hello";
+    String a = "ehlloj";
+    String b = "heljlo";
 
     void sortStrings()
     {
