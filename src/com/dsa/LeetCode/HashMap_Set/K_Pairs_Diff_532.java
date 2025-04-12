@@ -1,4 +1,4 @@
-package com.dsa.LeetCode;
+package com.dsa.LeetCode.HashMap_Set;
 
 import java.util.HashMap;
 import java.util.Map;
