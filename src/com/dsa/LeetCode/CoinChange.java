@@ -34,6 +34,7 @@ public class CoinChange
     {
         CoinChange cc = new CoinChange();
         int[] coins = {1, 3, 5, 6};
+
         System.out.println("Minimum coins are " + cc.coinChange(coins, 18));
     }
 }
