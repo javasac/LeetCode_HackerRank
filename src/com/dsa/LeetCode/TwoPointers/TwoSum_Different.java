@@ -1,9 +1,9 @@
-package com.dsa.LeetCode;
+package com.dsa.LeetCode.TwoPointers;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum
+public class TwoSum_Different
 {
     void TwoSum_1(int[] twosum, int target)
     {
@@ -93,14 +93,16 @@ public class TwoSum
 
     public static void main(String[] args)
     {
-        TwoSum ts = new TwoSum();
-        int arr[] = {266, 45, 159, 14, 67, 15, 100};
+        TwoSum_Different ts = new TwoSum_Different();
 
+        //int arr[] = {266, 45, 159, 14, 67, 15, 100};
         //ts.TwoSum_1(arr, 29);
         //ts.TwoSum_2(arr, 29);
         //ts.TwoSum_3(arr, 29);
 
-        int index[] = ts.TwoSum_4(arr, 60);
+        int arr[] = {3, 2, 4};
+
+        int index[] = ts.TwoSum_4(arr, 6);
         Arrays.stream(index).forEach(System.out::println);
     }
 }
