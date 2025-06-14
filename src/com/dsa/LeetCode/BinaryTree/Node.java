@@ -2,12 +2,19 @@ package com.dsa.LeetCode.BinaryTree;
 
 public class Node
 {
-    int val;
-    Node left;
-    Node right;
+    int data;
+    Node left, right;
 
-    public Node(int val)
+    public Node(int data)
     {
-        this.val = val;
+        this.data = data;
+        left = right = null;
+    }
+
+    public Node(int data, Node left, Node right)
+    {
+        this.data = data;
+        this.left = left;
+        this.right = right;
     }
 }

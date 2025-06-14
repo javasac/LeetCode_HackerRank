@@ -26,11 +26,11 @@ class EqualRowColumn
         int n = 0;
         int[] r, c;
 
-        for (int x=0; x<rows.length; x++)
+        for (int x=0; x < rows.length; x++)
         {
             r = rows[x];
 
-            for (int y=0; y<cols.length; y++)
+            for (int y=0; y < cols.length; y++)
             {
                 c = cols[y];
 
@@ -58,7 +58,7 @@ class EqualRowColumn
     public static void main(String[] args)
     {
         EqualRowColumn ee = new EqualRowColumn();
-        int[][] grid = {{3,1,2,2},{1,4,4,5},{2,4,2,2}, {2,4,2,2}};
+        int[][] grid = {{3,1,2,2}, {1,4,4,5}, {2,4,2,2}, {2,4,2,2}};
 
         ee.equalPairs(grid);
     }
