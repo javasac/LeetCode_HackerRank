@@ -23,7 +23,7 @@ public class Cost_Hire_K_Workers
         Cost_Hire_K_Workers ch = new Cost_Hire_K_Workers();
 
         //int[] costs = {17,12,10,2,7,2,11,20,8};
-        int[] costs = {1,2,4,1};
+        int[] costs = {1, 2, 4, 1};
         int k = 3;
         int candidates = 3;
 

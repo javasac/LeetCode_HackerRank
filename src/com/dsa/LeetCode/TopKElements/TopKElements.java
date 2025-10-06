@@ -42,6 +42,7 @@ public class TopKElements
     {
         int num[] = {10, 50, 20, 50, 80, 20, 10, 10, 20, 20};
         TopKElements tk = new TopKElements();
+
         tk.topK(num, 2);
     }
 }

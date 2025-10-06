@@ -15,20 +15,16 @@ public class BuySellStock
             }
 
             profit = Math.max(profit, prices[i] - min);
-            /*if ((prices[i] - min) > profit)
-            {
-                profit = prices[i] - min;
-            }*/
-
             System.out.println(min + ", " + prices[i] + ", " + profit);
         }
+
         System.out.println("Max profit = " + profit);
     }
 
     public static void main(String[] args)
     {
         BuySellStock bs = new BuySellStock();
-        int arr[] = {7, 10, 5, 30, 61, 4, 598};
+        int arr[] = {700, 100, 500, 300, 600, 400, 590};
         bs.maxProfit(arr);
     }
 }

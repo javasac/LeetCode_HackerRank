@@ -90,15 +90,15 @@ class Binary_Tree
 
         ctr = bt.Pre_Order(bt.root);
         System.out.println();
-        System.out.println("Pre-order Traversal (Root -> Left -> Right).");
+        System.out.println("Pre-Order Traversal (Root -> Left -> Right).");
 
         ctr = bt.In_Order(bt.root);
         System.out.println();
-        System.out.println("In-order Traversal (Left -> Root -> Right).");
+        System.out.println("In-Order Traversal (Left -> Root -> Right).");
 
         ctr = bt.Post_Order(bt.root);
         System.out.println();
-        System.out.println("Post-order Traversal (Left -> Right -> Root).");
+        System.out.println("Post-Order Traversal (Left -> Right -> Root).");
 
         System.out.println();
         System.out.println("Max Depth of the Tree = " + bt.maxDepth(bt.root));
