@@ -30,9 +30,9 @@ class TwoSum_LC1
     public static void main(String[] args)
     {
         TwoSum_LC1 ts = new TwoSum_LC1();
-        int[] sum = {2,7,11,15};
+        int[] sum = {3, 5, -4, 8, 11, 1, -1, 6};
 
-        int ind[] = ts.findSum(sum, 22);
+        int ind[] = ts.findSum(sum, 10);
 
         Arrays.stream(ind).forEach(System.out::println);
     }
