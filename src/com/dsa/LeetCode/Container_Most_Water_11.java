@@ -31,7 +31,6 @@ class Container_Most_Water_11
     {
         Container_Most_Water_11 cm = new Container_Most_Water_11();
         int[] height = {11,8,6,2,5,4,8,3,11};
-        //int[] height = {1,1};
 
         System.out.println("Max Height of Container is " + cm.maxArea(height));
     }

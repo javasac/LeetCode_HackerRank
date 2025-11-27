@@ -1,6 +1,7 @@
 package com.dsa.AlgoExpert;
 import java.util.*;
 
+// Time Complexity = O(n * n) and Space Complexity = O(n)
 public class ThreeSumTriplet
 {
     List<Integer[]> sumTrip(int[] arr, int tar)

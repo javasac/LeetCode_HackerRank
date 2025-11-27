@@ -34,7 +34,6 @@ public class LeetCode_540
     public static void main(String[] args)
     {
         LeetCode_540 lc = new LeetCode_540();
-
         int[] nums = {1, 1, 2, 2, 3, 3, 4, 4, 8};
 
         System.out.println("Single element in sorted Array = " + lc.singleNonDuplicate(nums));
