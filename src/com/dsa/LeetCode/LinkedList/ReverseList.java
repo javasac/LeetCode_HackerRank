@@ -18,6 +18,7 @@ public class ReverseList
     ListNode reversLL(ListNode node)
     {
         ListNode curr = node, prev = null, next = null;
+
         while (curr!=null)
         {
             next = curr.next;
