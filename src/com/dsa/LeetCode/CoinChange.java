@@ -15,7 +15,7 @@ public class CoinChange
             {
                 if (i >= coins[j])
                 {
-                    amt[i] = Math.min(amt[i], 1 + amt[i-coins[j]]);
+                    amt[i] = Math.min(amt[i], 1 + amt[i - coins[j]]);
                 }
             }
         }
@@ -35,6 +35,6 @@ public class CoinChange
         CoinChange cc = new CoinChange();
         int[] coins = {1, 3, 5, 6};
 
-        System.out.println("Minimum coins are " + cc.coinChange(coins, 18));
+        System.out.println("Minimum coins are " + cc.coinChange(coins, 5));
     }
 }
