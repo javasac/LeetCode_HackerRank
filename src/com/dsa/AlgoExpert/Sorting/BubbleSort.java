@@ -1,4 +1,4 @@
-package com.dsa.AlgoExpert;
+package com.dsa.AlgoExpert.Sorting;
 import java.util.Arrays;
 
 // Time Complexity is O(n^2) and Space Complexity is O(n).

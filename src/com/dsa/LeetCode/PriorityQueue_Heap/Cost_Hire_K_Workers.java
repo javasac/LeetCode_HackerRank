@@ -24,8 +24,8 @@ public class Cost_Hire_K_Workers
         //int[] costs = {17,12,10,2,7,2,11,20,8};
         int[] costs = {1, 2, 4, 1};
         int k = 3;
-        int candidates = 3;
+        int cand = 3;
 
-        System.out.println("Total Cost is " + ck.totalCost(costs, k, candidates));
+        System.out.println("Total Cost is " + ck.totalCost(costs, k, cand));
     }
 }

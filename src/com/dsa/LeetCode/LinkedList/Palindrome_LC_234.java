@@ -36,6 +36,7 @@ public class Palindrome_LC_234
         System.out.println();
 
         int left = 0, right = list.size() - 1;
+
         while (left < right)
         {
             if (list.get(left) != list.get(right))

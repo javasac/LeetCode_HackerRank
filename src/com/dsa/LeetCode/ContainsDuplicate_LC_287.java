@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ContainsDuplicate
+public class ContainsDuplicate_LC_287
 {
     // brute force
     boolean bruteForce(int arr[])
@@ -67,7 +67,7 @@ public class ContainsDuplicate
     public static void main(String[] args)
     {
         int arr[] = {40, 71, 13, 100, 456, 40, 10, 8905};
-        ContainsDuplicate cd = new ContainsDuplicate();
+        ContainsDuplicate_LC_287 cd = new ContainsDuplicate_LC_287();
 
         //System.out.println(cd.bruteForce(arr));
         //System.out.println(cd.sortArray(arr));

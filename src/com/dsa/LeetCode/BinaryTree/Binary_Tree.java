@@ -65,7 +65,7 @@ class Binary_Tree
     // Max depth of the Tree
     int maxDepth(Node root)
     {
-        if (root==null)
+        if (root == null)
         {
             return 0;
         }
